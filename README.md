@@ -2,25 +2,17 @@
 
 Todo App with Vue 2
 
-## Install the dependencies
-```bash
-npm install
-```
+A idéia do projeto é criar um Todo List, onde o usuário pode criar `Tarefas` a serem realizadas e agrupá-los em `Listas` para organização
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+## Principais Funcionalidades
+### Tarefas
+Tarefas terá `name`, `completed` e `descricao`
 
-### Lint the files
-```bash
-npm run lint
-```
+### Listas
+Lista terá `name` e `todos`
 
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.conf.js](https://v1.quasar.dev/quasar-cli/quasar-conf-js).
+## Tecnologias utilizadas
+- [Quasar](https://quasar.dev/)
+- [Vue.js 2](https://vuejs.org/)
+  - [Vuex](https://vuex.vuejs.org/)
+  - [Vue Router](https://router.vuejs.org/)
