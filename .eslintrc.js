@@ -17,19 +17,18 @@ module.exports = {
   // Rules order is important, please avoid shuffling them
   extends: [
     // Base ESLint recommended rules
-    // 'eslint:recommended',
-
+    'eslint:recommended',
 
     // Uncomment any of the lines below to choose desired strictness,
     // but leave only one uncommented!
     // See https://eslint.vuejs.org/rules/#available-rules
-    'plugin:vue/essential', // Priority A: Essential (Error Prevention)
+    // 'plugin:vue/essential', // Priority A: Essential (Error Prevention)
     // 'plugin:vue/strongly-recommended', // Priority B: Strongly Recommended (Improving Readability)
-    // 'plugin:vue/recommended', // Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead)
+    'plugin:vue/recommended', // Priority C: Recommended (Minimizing Arbitrary Choices and Cognitive Overhead)
 
     // https://github.com/prettier/eslint-config-prettier#installation
     // usage with Prettier, provided by 'eslint-config-prettier'.
-    'prettier'
+    // 'prettier'
   ],
 
   plugins: [
@@ -53,8 +52,21 @@ module.exports = {
 
   // add your custom rules here
   rules: {
-    'prefer-promise-reject-errors': 'off',
+    'no-unused-vars': 'warn',
+    'no-unreachable': 'warn',
+    'semi': ['error', 'never'], // ponto-virgula
+    'comma-dangle': 'error', // virgula
+    'no-trailing-spaces': ['error'], // pos-espacos
 
+    'vue/no-unused-vars': 'warn',
+    'vue/no-unused-components': 'warn',
+    'vue/attribute-hyphenation': 'off',
+    'vue/require-default-prop': 'off',
+    'vue/v-slot-style': 'off',
+    'vue/no-empty-component-block': 'warn',
+    'vue/script-indent': ['warn'],
+    "vue/max-attributes-per-line": ["off"],
+    'vue/html-self-closing': ['warn'],
 
     // allow debugger during development only
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
