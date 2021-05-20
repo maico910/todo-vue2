@@ -1,2 +1,3 @@
-export function someGetter (/* state */) {
+export function lists (state) {
+  return state.lists
 }
