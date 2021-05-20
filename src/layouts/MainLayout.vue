@@ -1,10 +1,9 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="hHh Lpr lff">
     <q-header elevated>
       <q-toolbar>
-        <q-btn flat dense round icon="menu" aria-label="Menu" @click="leftDrawerOpen = !leftDrawerOpen"/>
-
-        <q-toolbar-title> Vue 2 - Todo List </q-toolbar-title>
+        <q-btn flat dense round behavior="desktop" icon="fas fa-bars" aria-label="Menu" @click="leftDrawerOpen = !leftDrawerOpen" />
+        <img class="q-px-md" src="~/assets/logo.svg" alt="logo" height="40px">
       </q-toolbar>
     </q-header>
 
